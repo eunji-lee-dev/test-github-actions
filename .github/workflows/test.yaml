@@ -7,6 +7,8 @@ jobs:
     name: Check that the unut test are all passing
     runs-on: ubuntu-20.04
     steps:
-      - name: Docker
-        run: docker run -d --name webserver -p 80:80 ngicd nx:1.21.1
+      - name: Docker image
+        run: docker pull nginz:latest
+      - name: Docker run
+        run: docker run -d --name webserver -p 80:80 nginx
 
