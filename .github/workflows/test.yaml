@@ -7,8 +7,8 @@ jobs:
     strategy:
       matrix:
         nginx_versions:
-          - nginx-1.21.6
-          - nginx-1.20.2
+          - nginx:1.21.6
+          - nginx:1.20.2
 
     name: Check that the unut test are all passing
     runs-on: ubuntu-20.04
