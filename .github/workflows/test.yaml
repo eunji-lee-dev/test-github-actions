@@ -10,5 +10,5 @@ jobs:
       - name: Docker image
         run: docker pull nginx:latest
       - name: Docker run
-        run: docker run -d --name webserver -p 80:80 nginx
+        run: docker run -d --name webserver -p 8000:80 nginx
 
