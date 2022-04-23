@@ -18,7 +18,7 @@ jobs:
     runs-on: ${{matrix.operating_system}}
     steps:
       - name: Pull
-        run: docker pull nginx:${{matrix.nginx_version}}
+        run: docker pull ${{matrix.nginx_version}}
       - name: Run
         run: docker run -d  --publish 80:80 --name webserver nginx
       - name: HTTP Request
