@@ -11,4 +11,7 @@ jobs:
         run: docker pull nginx:latest
       - name: Docker run
         run: docker run -d --name webserver -p 8000:80 nginx
+      - name: Docker-compose run
+        run: docker-compose up -d
+
 
